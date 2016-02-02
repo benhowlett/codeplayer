@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>CodePlayer</title>
+
+	<meta charset="utf-8"/>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+
+</head>
+<body>
+
+	<div id="header">
+		<h1 id="logo">CodePlayer</h1>
+		<div id="toggles">
+			<button id="toggleHTML" class="toggle pressed">HTML</button>
+			<button id="toggleCSS" class="toggle">CSS</button>
+			<button id="toggleJS" class="toggle">JS</button>
+			<button id="toggleResult" class="toggle pressed">Result</button>
+		</div>
+		<button id="run">Run</button>
+	</div>
+
+	<div id="container">
+
+		<div id="htmlPanel" class="panel"><div id="htmlLabel" class="label">HTML</div><textarea id="html"></textarea></div>
+		<div id="cssPanel" class="panel hide"><div id="cssLabel" class="label hide">CSS</div><textarea id="css"></textarea></div>
+		<div id="jsPanel" class="panel hide"><div id="jsLabel" class="label hide">JS</div><textarea id="js"></textarea></div>
+		<div id="resultPanel" class="panel"><div id="resultLabel" class="label">Result</div><iframe id="result"></iframe></div>
+
+	</div>
+
+	<script type="text/javascript" src="js/script.js"></script>
+
+</body>
+</html>
